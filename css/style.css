@@ -43,7 +43,7 @@ body {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -93,6 +93,10 @@ img {
   height: auto;
 }
 
+@media screen and (max-width:1024px){
+
+}
+
 
 
 .header {
@@ -102,6 +106,7 @@ img {
 
 .header .header-inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -131,6 +136,9 @@ img {
   gap: 40px;
 }
 
+.header .header-menu .current{
+  color: var(--ocean-blue);
+}
 .header .header-menu .current::after{
   content: '';
   display: block;
@@ -159,7 +167,9 @@ img {
 
 .header .header-social {
   display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
+  gap: 12px 40px;
 }
 
 .header .header-social a {
@@ -175,9 +185,6 @@ img {
   color: var(--ocean-blue);
 }
 
-.header .header-social li {
-  margin-right: 40px;
-}
 
 .header .header-social li:last-child {
   margin-right: 0;
@@ -230,6 +237,8 @@ img {
 
 .info .info-main {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -301,6 +310,7 @@ img {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team .staff .staff-card {
@@ -361,6 +371,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 .customers .list-link{
@@ -870,4 +881,125 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-grey);
+}
+
+
+@media screen and (max-width:1200px){
+  .header .header-social li{
+    margin-left: auto;
+  }
+  .footer .footer-inner{
+    justify-content: center;
+    gap: 72px 0;  
+  }
+}
+
+@media screen and (max-width:768px){
+  .header {
+    padding: 16px 0;
+  }
+  .banner {
+    padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/banner/bgd-banner_tab@2x.jpg);
+  }
+  .header .header-menu .current::after{
+    bottom: -7px;
+  }
+  .header .header-social{
+    display: block;
+  }
+  .info{
+    padding: 96px 0;
+  }
+  .info .info-block h3{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+  .info .info-block{
+    max-width: 356px;
+  }
+    element.style {}
+  
+  .info .info-block p{
+    font-weight: 500;
+  }
+  .info .info-main{
+    gap: 72px 24px;
+  }
+  .info .info-block .info-block-head{
+    display: none;
+  }
+  .doing{
+    display: none;
+  }
+  .team{
+    padding: 96px 0;
+  }
+  .team .staff{
+    gap: 64px 24px;
+  }
+  .customers{
+    padding: 96px 0;
+  }
+  .customers .customers-list{
+    gap: 72px 24px;
+  }
+  .footer{
+    padding: 96px 0;
+  }
+  .footer .footer-logo {
+    margin-right: 0;
+  }
+  .footer .footer-inner{
+    gap: 72px 24px;
+  }
+  .footer .footer-form{
+    margin-left: -45px;
+  }
+}
+
+@media screen and (max-width:480px){
+  .header .header-menu{
+    display: none;
+  }
+  .header .header-social{
+    display: none;
+  }
+  .banner{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/banner/bgd-banner_mob@2x.jpg);
+  }
+  .banner h1{
+    font-size: 36px;
+    line-height: 1.11;
+    max-width: 320px;
+  }
+  .banner button{
+    margin-top: 72px;
+  }
+  .info .info-block{
+    max-width: none;
+  }
+  .info .info-block h3{
+    text-align: center;
+  }
+  .footer .footer-form{
+    margin-left: inherit;
+    width: 100%;
+  }
+  .footer .form-subscribe .subscribe-title{
+    text-align: center;
+  }
+  .footer .subscribe-box{
+    justify-content: center;
+  }
+  .footer .footer-inner{
+    text-align: center;
+  }
+  .logotype{
+    margin-right: 0;
+  }
+  .footer .subscribe-box .subscribe-box-email{
+    width: 100%;
+  }
 }
