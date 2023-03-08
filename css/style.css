@@ -907,6 +907,8 @@ img {
   color: var(--slate-grey);
 }
 
+.mobile-contacts .email-links:focus,
+.mobile-contacts .email-links:hover,
 .mobile-contacts .mobile-links:focus,
 .mobile-contacts .mobile-links:hover{
   color: var(--ocean-blue);
