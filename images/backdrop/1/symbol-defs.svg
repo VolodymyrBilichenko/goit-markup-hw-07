@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
-    <symbol id="icon-checkbox" viewBox="0 0 32 32">
-      <path stroke-width="2" d="M4 1h24a3 3 0 0 1 3 3v24a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3z"/>
+    <symbol id="icon-menu-burger" viewBox="0 0 47 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4.364" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"/>
     </symbol>
   </defs>
 </svg>
